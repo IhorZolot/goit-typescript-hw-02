@@ -1,12 +1,13 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type PageStatus = 'open' | 'close';
 
 type Page = {
 	title: string
 	likes: number
 	accounts: string[]
-	status: string
+	status: PageStatus
 	details?: {
 		createAt: Date
 		updateAt: Date
